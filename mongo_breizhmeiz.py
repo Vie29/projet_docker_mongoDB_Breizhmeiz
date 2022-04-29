@@ -17,7 +17,7 @@ liste_livre = collection.find({type:"Book"})
 pprint.pprint(liste_livre)
 
 #Lister les livres depuis 2014
-liste_depuis_2014 = collection.find({"year": {$gt: "2014" }})
+liste_depuis_2014 = collection.find({"year": {gt: "2014" }})
 pprint.pprint(liste_depuis_2014)
 
 #Lister tous les auteurs distincts 
